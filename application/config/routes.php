@@ -50,7 +50,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['default_controller'] = 'welcome';
-$route['client-testimonial'] = 'Testimonial/getreview';
+$route['testimonial-form'] = 'Testimonial/getreview';
+$route['client-testimonial'] = 'Testimonial';
 $route['upload-file'] = 'Csv_file';
 $route['file-uploaded'] = 'Csv_file/upload';
 $route['404_override'] = '';

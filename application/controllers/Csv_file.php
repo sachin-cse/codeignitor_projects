@@ -21,13 +21,13 @@ class Csv_file extends CI_Controller {
 	public function upload(){
 		// check if file is uploaded
 		if($_FILES['csv_file']['name']){
-			$config['upload_path'] = 'D:\xampp\htdocs\codeignitor\uploads';
+			$config['upload_path'] = './uploads/';
 			$config['allowed_types'] = 'csv|xls|xlsx';
 			$this->load->library('upload', $config);
 
 			if($this->upload->do_upload('csv_file')){
 				$filedata = $this->upload->data();
-				$filepath = 'D:\xampp\htdocs\codeignitor\uploads\\' .$filedata['file_name'];
+				$filepath = './uploads/' .$filedata['file_name'];
 
 				// load csv data
 				$csvdata = array_map('str_getcsv', file($filepath));

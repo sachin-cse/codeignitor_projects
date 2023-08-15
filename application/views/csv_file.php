@@ -48,7 +48,7 @@
 	<h2>File data upload in database system</h2>
 	
 	<label> Choose the File to upload: </label>
-	<input type="file" id="myFile" name="csv_file" /> <br /><br />
+	<input type="file" id="myFile" name="csv_file" required/> <br /><br />
 	
 	<input type="submit" value="submit" />
 </form>
